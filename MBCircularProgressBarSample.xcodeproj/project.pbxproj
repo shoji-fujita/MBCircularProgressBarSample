@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41725A425CB9E066272E4B7A /* Pods_MBCircularProgressBarSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B22DAC15C5A649A0E3D1CFC /* Pods_MBCircularProgressBarSample.framework */; };
 		CE45BA731DF24A4D005EAFC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45BA721DF24A4D005EAFC7 /* AppDelegate.swift */; };
 		CE45BA751DF24A4D005EAFC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45BA741DF24A4D005EAFC7 /* ViewController.swift */; };
 		CE45BA781DF24A4D005EAFC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE45BA761DF24A4D005EAFC7 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FCD7016EAD0FDEC815727D6 /* Pods-MBCircularProgressBarSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBCircularProgressBarSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MBCircularProgressBarSample/Pods-MBCircularProgressBarSample.release.xcconfig"; sourceTree = "<group>"; };
+		4B22DAC15C5A649A0E3D1CFC /* Pods_MBCircularProgressBarSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBCircularProgressBarSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1A63F955314B129E387085 /* Pods-MBCircularProgressBarSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBCircularProgressBarSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBCircularProgressBarSample/Pods-MBCircularProgressBarSample.debug.xcconfig"; sourceTree = "<group>"; };
 		CE45BA6F1DF24A4D005EAFC7 /* MBCircularProgressBarSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBCircularProgressBarSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE45BA721DF24A4D005EAFC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE45BA741DF24A4D005EAFC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41725A425CB9E066272E4B7A /* Pods_MBCircularProgressBarSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2456D4BAE69B1781B642B80B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B22DAC15C5A649A0E3D1CFC /* Pods_MBCircularProgressBarSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		902907607C40E20C370A295D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A63F955314B129E387085 /* Pods-MBCircularProgressBarSample.debug.xcconfig */,
+				3FCD7016EAD0FDEC815727D6 /* Pods-MBCircularProgressBarSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE45BA661DF24A4D005EAFC7 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				CE45BA861DF24A4D005EAFC7 /* MBCircularProgressBarSampleTests */,
 				CE45BA911DF24A4D005EAFC7 /* MBCircularProgressBarSampleUITests */,
 				CE45BA701DF24A4D005EAFC7 /* Products */,
+				902907607C40E20C370A295D /* Pods */,
+				2456D4BAE69B1781B642B80B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE45BA971DF24A4D005EAFC7 /* Build configuration list for PBXNativeTarget "MBCircularProgressBarSample" */;
 			buildPhases = (
+				53596212B242B71E7E90126C /* [CP] Check Pods Manifest.lock */,
 				CE45BA6B1DF24A4D005EAFC7 /* Sources */,
 				CE45BA6C1DF24A4D005EAFC7 /* Frameworks */,
 				CE45BA6D1DF24A4D005EAFC7 /* Resources */,
+				2DA1470AF9C8A5CA2066CFEC /* [CP] Embed Pods Frameworks */,
+				196513ED353DEC3E1EA760E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		196513ED353DEC3E1EA760E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBCircularProgressBarSample/Pods-MBCircularProgressBarSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DA1470AF9C8A5CA2066CFEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBCircularProgressBarSample/Pods-MBCircularProgressBarSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53596212B242B71E7E90126C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE45BA6B1DF24A4D005EAFC7 /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		CE45BA981DF24A4D005EAFC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB1A63F955314B129E387085 /* Pods-MBCircularProgressBarSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2TVHTVBM2Y;
@@ -426,6 +502,7 @@
 		};
 		CE45BA991DF24A4D005EAFC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FCD7016EAD0FDEC815727D6 /* Pods-MBCircularProgressBarSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2TVHTVBM2Y;

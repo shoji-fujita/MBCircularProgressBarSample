@@ -7,19 +7,22 @@
 //
 
 import UIKit
+import MBCircularProgressBar
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var progressBar: MBCircularProgressBarView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func tappedButton(_ sender: UIButton) {
+        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut, animations: { () -> Void in
+            self.progressBar.value = 70
+        }, completion: { finished in
+            self.progressBar.value = 35
+        })
     }
-
 
 }
-
